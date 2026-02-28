@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "aluminum-extrusion",
+    "name": "Aluminum & Extrusion",
+    "description": "Works directly using aluminum extrusion or aluminum as primary medium — the industrial profile as artistic vocabulary.",
+    "count": 25
+  },
+  {
+    "slug": "industrial-materials",
+    "name": "Industrial Materials",
+    "description": "Steel, concrete, rebar, glass — industrial material elevated to artistic medium, stripped of utilitarian context.",
+    "count": 15
+  },
+  {
+    "slug": "modularity-systems",
+    "name": "Modularity & Systems",
+    "description": "Systems thinking, modular design, kit-of-parts logic — the generative potential of repeatable units.",
+    "count": 15
+  },
+  {
+    "slug": "readymade-recontextualization",
+    "name": "Readymade & Recontextualization",
+    "description": "Found objects and industrial materials displaced from original context, generating new meaning through relocation.",
+    "count": 10
+  },
+  {
+    "slug": "material-craft",
+    "name": "Material Craft & Joinery",
+    "description": "Joinery traditions meeting industry, handcraft as resistance, material transformation through intimate knowledge.",
+    "count": 10
+  },
+  {
+    "slug": "architecture-furniture",
+    "name": "Architecture-Furniture Hybrid",
+    "description": "Works blurring boundaries between sculpture, furniture, and architecture — scale as conceptual variable.",
+    "count": 10
+  },
+  {
+    "slug": "seriality-repetition",
+    "name": "Seriality & Repetition",
+    "description": "Systematic variation, typologies, repetition as generative method — the module as philosophical unit.",
+    "count": 8
+  },
+  {
+    "slug": "material-biography",
+    "name": "Material Biography & Circularity",
+    "description": "Recycled material, traceable origins, circularity — materials carrying histories that inflect their present form.",
+    "count": 7
+  }
+]
