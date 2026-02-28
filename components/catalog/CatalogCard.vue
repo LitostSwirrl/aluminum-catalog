@@ -24,13 +24,14 @@ const imgError = ref(false);
         class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         @error="imgError = true"
       />
-      <div
+      <SharedArtworkPlaceholder
         v-else
-        class="flex h-full items-center justify-center"
-        :style="{ backgroundColor: getCategoryColor(artwork.category) + '15' }"
-      >
-        <span class="font-serif text-2xl text-catalog-muted/40">{{ artwork.artist.charAt(0) }}</span>
-      </div>
+        :title="artwork.title"
+        :artist="artwork.artist"
+        :year="artwork.year"
+        :category="artwork.category"
+        size="md"
+      />
       <!-- Category dot -->
       <span
         class="absolute left-3 top-3 h-2.5 w-2.5 rounded-full ring-2 ring-white"

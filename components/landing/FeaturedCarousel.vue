@@ -60,13 +60,14 @@ const currentWork = computed(() => featured[current.value]);
             class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
             @error="imgErrors.add(current)"
           />
-          <div
+          <SharedArtworkPlaceholder
             v-else
-            class="flex h-full items-center justify-center"
-            :style="{ backgroundColor: getCategoryColor(currentWork.category) + '15' }"
-          >
-            <span class="font-serif text-5xl text-catalog-muted/30">{{ currentWork.artist.charAt(0) }}</span>
-          </div>
+            :title="currentWork.title"
+            :artist="currentWork.artist"
+            :year="currentWork.year"
+            :category="currentWork.category"
+            size="lg"
+          />
         </div>
         <div class="flex flex-col justify-center">
           <SharedCategoryBadge :category="currentWork.category" size="sm" />

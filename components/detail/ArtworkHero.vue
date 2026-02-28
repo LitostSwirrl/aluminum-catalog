@@ -6,7 +6,6 @@ defineProps<{
 }>();
 
 const imgError = ref(false);
-const { getCategoryColor } = useCategoryColors();
 </script>
 
 <template>
@@ -18,13 +17,14 @@ const { getCategoryColor } = useCategoryColors();
       class="h-full w-full object-cover"
       @error="imgError = true"
     />
-    <div
+    <SharedArtworkPlaceholder
       v-else
-      class="flex h-full items-center justify-center"
-      :style="{ backgroundColor: getCategoryColor(artwork.category) + '10' }"
-    >
-      <span class="font-serif text-6xl text-catalog-muted/20">{{ artwork.artist.charAt(0) }}</span>
-    </div>
+      :title="artwork.title"
+      :artist="artwork.artist"
+      :year="artwork.year"
+      :category="artwork.category"
+      size="lg"
+    />
     <!-- Gradient overlay -->
     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
     <!-- Title overlay -->
